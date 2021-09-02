@@ -1,0 +1,32 @@
+#medVideo {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.centered-heading {
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left: 40%;
+    color: white;
+    font-size: 70px;
+}
+
+.centered-subheading {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    color: white;
+    font-size: 30px;
+}
+
+#continue {
+    position: absolute;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}

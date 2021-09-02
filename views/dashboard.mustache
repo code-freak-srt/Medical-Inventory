@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "/dashstyle.css">
+    <title>Medical Inventory Dashboard</title>
+</head>
+
+<body>
+<div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+                <a class="navbar-brand" href="./index.html">Meditory</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" arial-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/meds">Medicine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dashboard">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-md-12">
+                <h1> Dashboard </h1>
+            </div>
+        </div>
+    </div> 
+
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "card">
+                <div class = "card-header">
+                    Stats
+                </div>
+                <div class = "card-body">
+                    <table class = "table table-light">
+                        <tr>
+                            <td>Total Stocks</td>
+                            <td>Total Brands</td>
+                        </tr>
+
+                        <tr>
+                            {{#n1}}<td>{{sum}}</td>{{/n1}}
+                            {{#n2}}<td>{{count}}</td>{{/n2}}
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "card">
+                <div class = "card-header">
+                    Actions
+                </div>
+                <div class = "card-body">
+                    <a class = "btn btn-primary" href = "/add">Add Medicine</a>
+                    <a class = "btn btn-primary disabled" href = "/edit">Edit Medicine</a>
+                    <a class = "btn btn-primary" href = "/meds">List Medicine</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+</body>
+
+</html>
